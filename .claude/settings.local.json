@@ -10,7 +10,10 @@
       "Bash(git remote add:*)",
       "Bash(git push:*)",
       "Bash(git remote:*)",
-      "Bash(npm run build)"
+      "Bash(npm run build)",
+      "Bash(dir:*)",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)"
     ],
     "deny": [],
     "ask": []
