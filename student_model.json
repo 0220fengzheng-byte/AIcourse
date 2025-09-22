@@ -1,0 +1,9 @@
+{
+  "model_type": "linear_regression",
+  "coefficients": [0.8, 0.6, -0.3],
+  "intercept": 0.2,
+  "features": ["study_hours", "attendance", "sleep_hours"],
+  "accuracy": 0.85,
+  "created": "2024-09-03",
+  "description": "Student performance prediction model"
+}

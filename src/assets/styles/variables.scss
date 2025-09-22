@@ -1,0 +1,31 @@
+:root {
+  /* 主色调 - 温暖柔和 */
+  --primary-blue: #74b9ff;      /* 天空蓝 */
+  --primary-green: #00b894;     /* 薄荷绿 */
+  --primary-pink: #fd79a8;      /* 樱花粉 */
+  --primary-yellow: #fdcb6e;    /* 向日葵黄 */
+  
+  /* 背景色 - 纸质感 */
+  --bg-paper: #ffeaa7;          /* 米黄纸质 */
+  --bg-white: #ffffff;
+  --bg-light: #f8f9fa;
+  
+  /* 文字色 - 蜡笔质感 */
+  --text-dark: #2d3436;         /* 深灰蜡笔 */
+  --text-medium: #636e72;       /* 中灰蜡笔 */
+  --text-light: #b2bec3;        /* 浅灰蜡笔 */
+  
+  /* 功能色 */
+  --success: #00b894;           /* 成功绿 */
+  --warning: #fdcb6e;           /* 警告黄 */
+  --danger: #e84393;            /* 错误粉 */
+  --info: #74b9ff;              /* 信息蓝 */
+  
+  /* 任务类型颜色 */
+  --task-design: #fd79a8;       /* 设计粉 */
+  --task-development: #74b9ff;  /* 开发蓝 */
+  --task-planning: #a29bfe;     /* 策划紫 */
+  --task-testing: #55efc4;      /* 测试青 */
+  --task-marketing: #fdcb6e;    /* 营销黄 */
+  --task-operation: #e17055;    /* 运营橙 */
+}
