@@ -31,6 +31,7 @@ export default {
       { title: '待办事项', path: '/todo', icon: '✅' },
       { title: '番茄钟', path: '/pomodoro', icon: '🍅' },
       { title: '团队任务', path: '/team-tasks', icon: '🎯' },
+      { title: '设置', path: '/settings', icon: '⚙️' },
     ];
     
     return {
