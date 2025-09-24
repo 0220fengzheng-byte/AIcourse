@@ -73,7 +73,7 @@ export default {
 
 .card {
   position: relative;
-  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 1rem;
   overflow: hidden;
   height: 12rem;
@@ -87,11 +87,10 @@ export default {
   justify-content: center;
   text-align: center;
   padding: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.8);
 
   &:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(33, 150, 243, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
   }
 
   @media (min-width: 768px) {
@@ -134,13 +133,17 @@ export default {
 .card-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1976d2;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.8));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   margin-bottom: 0.75rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
   text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   @media (min-width: 768px) {
     font-size: 1.5rem;
@@ -150,11 +153,12 @@ export default {
 
 .card-description {
   font-size: 0.9rem;
-  color: #424242;
+  color: rgba(255, 255, 255, 0.95);
   width: 100%;
   margin: 0;
   text-align: center;
   line-height: 1.4;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 
   @media (max-width: 768px) {
     font-size: 0.8rem;

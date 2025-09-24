@@ -27,7 +27,10 @@
       "Bash(tracert:*)",
       "Bash(netsh advfirewall:*)",
       "Bash(ipconfig:*)",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "Read(//c/Users/fengzheng/**)",
+      "Bash(ssh-keygen:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
