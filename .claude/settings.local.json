@@ -30,7 +30,9 @@
       "Bash(findstr:*)",
       "Read(//c/Users/fengzheng/**)",
       "Bash(ssh-keygen:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(node -e:*)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []

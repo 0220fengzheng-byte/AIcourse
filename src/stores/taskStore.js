@@ -13,6 +13,7 @@ export const useTaskStore = defineStore('task', {
         assignee: 1,
         dueDate: '2023-06-15',
         createdAt: '2023-06-01T08:00:00.000Z',
+        documentLink: 'https://feishu.cn/docx/design-system-ui',
         hasAttachments: true,
         attachments: [
           {
@@ -32,6 +33,7 @@ export const useTaskStore = defineStore('task', {
         assignee: 2,
         dueDate: '2023-06-20',
         createdAt: '2023-06-05T09:30:00.000Z',
+        documentLink: 'https://docs.google.com/document/d/123456789',
         hasAttachments: false,
         attachments: []
       },
@@ -45,6 +47,7 @@ export const useTaskStore = defineStore('task', {
         assignee: 3,
         dueDate: '2023-06-25',
         createdAt: '2023-06-10T14:00:00.000Z',
+        documentLink: 'https://yuque.com/api-docs/task-management',
         hasAttachments: false,
         attachments: []
       },
