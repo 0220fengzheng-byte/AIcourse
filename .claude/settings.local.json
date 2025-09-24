@@ -16,7 +16,18 @@
       "Bash(git merge:*)",
       "Bash(git stash:*)",
       "Bash(npm run lint)",
-      "Bash(npm run serve)"
+      "Bash(npm run serve)",
+      "Bash(ping:*)",
+      "Bash(nslookup:*)",
+      "Bash(curl:*)",
+      "Bash(git config:*)",
+      "Bash(telnet:*)",
+      "Bash(timeout:*)",
+      "Bash(ssh:*)",
+      "Bash(tracert:*)",
+      "Bash(netsh advfirewall:*)",
+      "Bash(ipconfig:*)",
+      "Bash(findstr:*)"
     ],
     "deny": [],
     "ask": []

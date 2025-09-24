@@ -18,39 +18,39 @@ export default {
     const cards = ref([
       {
         title: "AI对话",
-        src: "https://img.freepik.com/free-vector/chat-bot-concept-illustration_114360-5522.jpg",
+        icon: "💬",
         path: "/chat",
-        description: "与AI助手对话，获取学习帮助和建议"
+        description: "与AI助手对话，获取学习帮助和建议，解答疑难问题"
       },
       {
         title: "智能记事本",
-        src: "https://img.freepik.com/free-vector/notebook-concept-illustration_114360-387.jpg",
+        icon: "📝",
         path: "/notes",
-        description: "记录笔记，AI自动分析和标签生成"
+        description: "记录笔记，AI自动分析和标签生成，智能整理知识点"
       },
       {
         title: "待办事项",
-        src: "https://img.freepik.com/free-vector/checklist-concept-illustration_114360-479.jpg",
+        icon: "✅",
         path: "/todo",
-        description: "管理个人任务，设置优先级和截止时间"
+        description: "管理个人任务，设置优先级和截止时间，提高工作效率"
       },
       {
         title: "番茄钟",
-        src: "https://img.freepik.com/free-vector/time-management-concept-illustration_114360-1013.jpg",
+        icon: "🍅",
         path: "/pomodoro",
-        description: "使用番茄工作法提高专注力和效率"
+        description: "使用番茄工作法提高专注力和效率，科学管理时间"
       },
       {
         title: "团队任务",
-        src: "https://img.freepik.com/free-vector/team-concept-illustration_114360-678.jpg",
+        icon: "👥",
         path: "/team-tasks",
-        description: "协作管理团队任务，跟踪进度和状态"
+        description: "协作管理团队任务，跟踪进度和状态，提升团队协作效率"
       },
       {
         title: "设置",
-        src: "https://img.freepik.com/free-vector/settings-concept-illustration_114360-3754.jpg",
+        icon: "⚙️",
         path: "/settings",
-        description: "自定义应用设置和个人偏好"
+        description: "自定义应用设置和个人偏好，打造专属工作环境"
       }
     ]);
 

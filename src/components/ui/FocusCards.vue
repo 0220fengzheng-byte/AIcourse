@@ -9,15 +9,10 @@
       @mouseleave="setHovered(null)"
       @click="handleCardClick(index)"
     >
-      <img 
-        :src="card.src" 
-        :alt="card.title" 
-        class="card-image"
-      />
-      <div 
-        class="card-overlay"
-        :class="{ 'visible': hovered === index }"
-      >
+      <div class="card-icon-wrapper">
+        <div class="card-icon">{{ card.icon }}</div>
+      </div>
+      <div class="card-content">
         <div class="card-title">
           {{ card.title }}
         </div>
@@ -78,22 +73,30 @@ export default {
 
 .card {
   position: relative;
-  background-color: #f3f4f6;
-  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-radius: 1rem;
   overflow: hidden;
-  height: 15rem;
+  height: 12rem;
   width: 100%;
   transition: all 0.3s ease-out;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.5s ease;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(33, 150, 243, 0.15);
   }
 
   @media (min-width: 768px) {
-    height: 24rem;
+    height: 14rem;
+    padding: 2rem;
   }
 
   &.blur-scale {
@@ -102,40 +105,37 @@ export default {
   }
 }
 
-.card-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.card-icon-wrapper {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card-overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+.card-icon {
+  font-size: 3rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 8px rgba(25, 118, 210, 0.2));
+
+  @media (min-width: 768px) {
+    font-size: 3.5rem;
+  }
+}
+
+.card-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
-  padding: 2rem 1rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  justify-content: center;
   text-align: center;
-
-  &.visible {
-    opacity: 1;
-  }
+  width: 100%;
 }
 
 .card-title {
   font-size: 1.25rem;
-  font-weight: 500;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1976d2;
+  margin-bottom: 0.75rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -144,23 +144,20 @@ export default {
 
   @media (min-width: 768px) {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 }
 
 .card-description {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #424242;
   width: 100%;
-  margin: 0.5rem 0 0;
+  margin: 0;
   text-align: center;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  
+  line-height: 1.4;
+
   @media (max-width: 768px) {
     font-size: 0.8rem;
-    -webkit-line-clamp: 2;
   }
 }
 </style>
